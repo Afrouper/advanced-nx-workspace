@@ -4,11 +4,14 @@ import { RouterModule } from '@angular/router';
 
 import { LuggageDomainModule } from '@flight-workspace/luggage/domain';
 import { CheckinComponent } from './checkin.component';
+import { LuggageUiCardModule  } from '@flight-workspace/luggage/ui-card';
+import { LoggerModule} from "@flight-workspace/logger-lib";
 
 @NgModule({
   imports: [
     CommonModule,
     LuggageDomainModule,
+    LuggageUiCardModule,
     RouterModule.forChild([
       { path: '', component: CheckinComponent }
     ])
@@ -17,3 +20,5 @@ import { CheckinComponent } from './checkin.component';
   exports: [CheckinComponent],
 })
 export class LuggageFeatureCheckinModule {}
+
+//Komentar :-)
