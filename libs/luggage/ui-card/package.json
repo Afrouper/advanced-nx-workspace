@@ -1,5 +1,5 @@
 {
-  "name": "@flight-workspace/luggage-ui-card",
+  "name": "@flight-workspace/luggage/ui-card",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^10.0.11",

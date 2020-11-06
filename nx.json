@@ -72,6 +72,18 @@
       }
     }
   },
+  "DISTRIBUTED_CACHE_EXAMPLE--tasksRunnerOptions": {
+    "default": {
+      "runner": "@apployees-nx/level-task-runner",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint"],
+        "levelTaskRunnerOptions": {
+          "driver": "redisdown",
+          "url": "rediss://localhost:6379"
+        }
+      }
+    }
+  },
   "affected": {
     "defaultBase": "master"
   }
